@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, ShoppingBag } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const ContactSection = () => (
   <section id="contact" className="py-16 md:py-24">
@@ -23,21 +24,19 @@ const ContactSection = () => (
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="tel:+37127000057"
-              className="inline-flex h-16 w-full items-center justify-center gap-3 rounded-2xl bg-white px-8 text-lg font-semibold text-[#c9101a] shadow-[0_10px_30px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/95 sm:w-[280px]"
-            >
-              <Phone className="h-5 w-5" />
-              Zvanīt tagad
-            </a>
+            <Button asChild variant="ctaPrimary" size="cta" className="w-full sm:w-[280px]">
+              <a href="tel:+37127000057">
+                <Phone className="h-5 w-5" />
+                <span className="whitespace-nowrap">Zvanīt tagad</span>
+              </a>
+            </Button>
 
-            <a
-              href="sms:+37127000057"
-              className="inline-flex h-16 w-full items-center justify-center gap-3 rounded-2xl border border-white/35 bg-white/5 px-8 text-lg font-semibold text-white backdrop-blur-[2px] transition-all duration-300 hover:-translate-y-0.5 hover:border-white/60 hover:bg-white/10 sm:w-[280px]"
-            >
-              <ShoppingBag className="h-5 w-5 shrink-0" />
-              <span className="whitespace-nowrap">Pasūtīt līdzņemšanai</span>
-            </a>
+            <Button asChild variant="ctaOutline" size="cta" className="w-full sm:w-[280px]">
+              <a href="sms:+37127000057">
+                <ShoppingBag className="h-5 w-5 shrink-0" />
+                <span className="whitespace-nowrap">Pasūtīt līdzņemšanai</span>
+              </a>
+            </Button>
           </div>
         </div>
       </motion.div>
