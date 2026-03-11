@@ -19,14 +19,14 @@ const CTASection = () => (
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="tel:+37127000057"
-            className="flex items-center justify-center gap-2 bg-white text-red-700 px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition-all"
+            className="flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-lg text-lg font-bold hover:bg-primary-foreground/90 transition-all"
           >
             <Phone className="w-5 h-5" />
             Zvanīt tagad
           </a>
           <a
             href="#menu"
-            className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/40 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-white/20 hover:border-white transition-all"
+            className="flex items-center justify-center gap-2 border-2 border-primary-foreground/40 text-primary-foreground px-8 py-4 rounded-lg text-lg font-bold hover:border-primary-foreground transition-all"
           >
             <ShoppingBag className="w-5 h-5" />
             Pasūtīt līdzņemšanai
