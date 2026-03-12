@@ -6,7 +6,6 @@ import MenuSection from "@/components/MenuSection";
 import GallerySection from "@/components/GallerySection";
 import ReviewsSection from "@/components/ReviewsSection";
 import LocationSection from "@/components/LocationSection";
-import ContactSection from "@/components/ContactSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import FloatingOrderButton from "@/components/FloatingOrderButton";
@@ -21,7 +20,6 @@ const Index = () => (
     <GallerySection />
     <ReviewsSection />
     <LocationSection />
-    <ContactSection />
     <CTASection />
     <Footer />
     <FloatingOrderButton />
